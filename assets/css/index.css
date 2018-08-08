@@ -6,12 +6,19 @@
     max-width: 100%;
     padding-left: 25px;
     padding-right: 25px; } }
+@media screen and (max-width: 700px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px; } }
 
 nav {
   background-color: #009874;
   width: 100%; }
   nav .col-md-3, nav .col-md-9 {
     height: 65px; }
+    @media screen and (max-width: 700px) {
+      nav .col-md-3, nav .col-md-9 {
+        height: 50px; } }
 
 .nav-container {
   position: relative; }
@@ -19,6 +26,10 @@ nav {
 .nav-logo {
   display: flex;
   align-items: center; }
+  @media screen and (max-width: 700px) {
+    .nav-logo img {
+      width: 140px;
+      object-fit: cover; } }
 
 @media screen and (max-width: 767px) {
   .nav-menu {
@@ -63,12 +74,23 @@ header {
   height: 730px;
   background-image: url("../img/header-bg.png");
   background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative; }
+  @media screen and (max-width: 700px) {
+    header {
+      height: 920px; } }
+  @media screen and (max-width: 700px) {
+    header .mobile-hide {
+      display: none; } }
 
 .header-inner {
   padding-top: 110px;
   color: white;
   text-align: center; }
+  @media screen and (max-width: 700px) {
+    .header-inner {
+      padding-top: 80px; } }
   .header-inner h1 {
     text-transform: uppercase;
     font-size: 36px;
@@ -84,6 +106,10 @@ header {
         width: auto;
         margin-left: -15px;
         margin-right: -15px; } }
+    @media screen and (max-width: 700px) {
+      .header-inner h1 {
+        font-size: 24px;
+        margin: auto; } }
   .header-inner h5 {
     font-size: 15px;
     font-family: "acumin-pro-wide", sans-serif; }
@@ -93,13 +119,17 @@ header {
   margin-top: 50px; }
 
 .header-list__beneficial {
-  margin-top: 15px; }
+  margin-top: 15px;
+  padding: 0; }
   .header-list__beneficial li {
     display: inline-block;
     font-size: 15px;
     padding: 2px 20px;
     background-color: RGBA(0, 152, 116, 0.2);
     font-family: "acumin-pro-wide", sans-serif; }
+    @media screen and (max-width: 700px) {
+      .header-list__beneficial li {
+        margin-bottom: 5px; } }
 
 .header-download {
   font-size: 20px;
@@ -108,6 +138,9 @@ header {
   margin-top: 75px;
   margin-bottom: 30px;
   font-family: "acumin-pro-wide", sans-serif; }
+  @media screen and (max-width: 700px) {
+    .header-download {
+      margin-top: 60px; } }
 
 .header-downloads {
   justify-content: space-between;
@@ -117,6 +150,9 @@ header {
   @media screen and (max-width: 1200px) {
     .header-downloads {
       margin: auto; } }
+  @media screen and (max-width: 700px) {
+    .header-downloads {
+      display: block; } }
 
 .header-downloads__card {
   width: 31%;
@@ -133,6 +169,11 @@ header {
   @media screen and (max-width: 767px) {
     .header-downloads__card {
       font-size: 13px; } }
+  @media screen and (max-width: 700px) {
+    .header-downloads__card {
+      margin: auto;
+      margin-bottom: 10px;
+      width: 100%; } }
   .header-downloads__card img {
     height: 14px; }
 
@@ -154,6 +195,12 @@ header {
   bottom: 25px;
   left: 0px;
   width: 100%; }
+  @media screen and (max-width: 700px) {
+    .header-links {
+      flex-wrap: wrap;
+      padding-left: 10px;
+      padding-right: 10px;
+      bottom: 15px; } }
 
 .header-link {
   display: flex;
@@ -161,6 +208,10 @@ header {
   justify-content: space-between;
   margin-right: 40px;
   color: white; }
+  @media screen and (max-width: 700px) {
+    .header-link {
+      margin-right: 15px;
+      margin-bottom: 10px; } }
   .header-link span {
     font-size: 14px;
     font-family: "acumin-pro-wide", sans-serif; }
@@ -183,6 +234,9 @@ header {
   text-transform: uppercase;
   font-weight: bold;
   font-family: "Syncopate", sans-serif; }
+  @media screen and (max-width: 700px) {
+    .section-header {
+      font-size: 24px; } }
 
 .section-image {
   width: 100%;
@@ -191,6 +245,9 @@ header {
   @media screen and (max-width: 991px) {
     .section-image {
       height: 400px; } }
+  @media screen and (max-width: 700px) {
+    .section-image {
+      height: 160px; } }
 
 .section-text {
   font-size: 15px;
@@ -199,6 +256,9 @@ header {
 section {
   padding-top: 90px;
   padding-bottom: 75px; }
+  @media screen and (max-width: 700px) {
+    section {
+      padding-top: 60px; } }
 
 .section-play-wrapper {
   position: relative;
@@ -221,10 +281,17 @@ section {
   justify-content: center;
   align-items: center;
   border-radius: 40px;
-  top: 125px;
   background-color: white; }
+  @media screen and (max-width: 700px) {
+    .section-play__inner {
+      height: 40px;
+      width: 40px; } }
   .section-play__inner img {
     margin-left: 10px; }
+    @media screen and (max-width: 700px) {
+      .section-play__inner img {
+        height: 20px;
+        margin-left: 5px; } }
 
 .section-text-wrapper {
   padding-left: 20px;
@@ -240,6 +307,10 @@ section {
   .adv-container {
     padding-left: 90px;
     padding-right: 90px; } }
+@media screen and (max-width: 700px) {
+  .adv-container {
+    padding-left: 15px;
+    padding-right: 15px; } }
 
 @media screen and (max-width: 991px) {
   .adv-card {
