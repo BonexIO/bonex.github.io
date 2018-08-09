@@ -1,7 +1,7 @@
 @import 'variables'
 
 
-.text-center
+.ta-center
   text-align: center
   
 .container
@@ -19,6 +19,10 @@
 nav
   background-color: $main-color
   width: 100%
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 5000
   .col-md-3, .col-md-9
     height: 65px 
     @media screen and (max-width: 700px) 
@@ -39,16 +43,29 @@ nav
 .nav-menu
   @media screen and (max-width: 767px) 
     display: none
+    position: fixed
+    width: 50%
+    height: 100% !important
+    background-color: $main-color
+    top: 65px
+    right: 0px
+  @media screen and (max-width: 700px) 
+    top: 50px
+    
     
 .nav-menu__list 
   height: 100%
   margin: 0
   text-align: right
+  padding-left: 0px
   li
     display: inline-block
     height: 100%
     padding-top: 20px
     margin-left: 15px
+    @media screen and (max-width: 767px) 
+      height: auto
+      display: block
     a
       color: white
       text-decoration: none
@@ -86,8 +103,10 @@ header
   background-repeat: no-repeat
   background-size: cover
   position: relative
+  margin-top: 65px 
   @media screen and (max-width: 700px) 
     height: 920px
+    margin-top: 50px      
     
   .mobile-hide
     @media screen and (max-width: 700px) 
@@ -391,6 +410,8 @@ section
   
   
 .section-3
+  @media screen and (max-width: 767px)
+    display: none
   .section-header
     text-align: center
     margin-bottom: 30px
@@ -467,20 +488,66 @@ section
       margin-top: 15px 
       margin-bottom: 15px
       
-    .roadmap-header.text-center
+    .roadmap-header.ta-center
       margin-bottom: 15px
 
     
 .roadmap-card.card-layout-2
   .card-top
-    .roadmap-header.text-center
+    .roadmap-header.ta-center
       margin-bottom: 35px
       margin-top: 15px
   .card-bottom 
     padding-top: 80px 
     
-    .roadmap-header.text-center
+    .roadmap-header.ta-center
       margin-bottom: 15px
+      
+      
+.section-roadmap__mobile
+  display: none
+  @media screen and (max-width: 767px) 
+    display: block
+  
+  .roadmap-container
+    display: block
+    @media screen and (max-width: 1300px)
+      width: 100%
+  .section-header
+    text-align: center
+      
+.roadmap-card.card-layout-3
+  width: 100%
+  display: flex
+  justify-content: flex-start
+  margin-bottom: 20px 
+  padding-right: 15px
+  padding-left: 15px
+  
+  .card-top
+    display: block
+    margin-right: 10px
+    height: auto
+  
+  .roadmap-icon
+    margin-top: 0px
+    margin-bottom: 0px
+    width: 70px
+    height: 70px
+    
+    img
+      height: 40px
+      object-fit: contain
+      
+  .card-bottom
+    padding-top: 25px
+
+    .roadmap-header:first-child
+      margin-bottom: 30px
+    
+  .card-noheader
+    padding-top: 0
+    
       
       
       
