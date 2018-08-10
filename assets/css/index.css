@@ -57,7 +57,8 @@ nav {
     display: inline-block;
     height: 100%;
     padding-top: 20px;
-    margin-left: 15px; }
+    margin-left: 15px;
+    transition: all 0.2s; }
     @media screen and (max-width: 767px) {
       .nav-menu__list li {
         height: auto;
@@ -66,7 +67,8 @@ nav {
       color: white;
       text-decoration: none;
       display: block;
-      font-family: "acumin-pro-wide", sans-serif; }
+      font-family: "acumin-pro-wide", sans-serif;
+      transition: all 0.2s; }
   .nav-menu__list li.active, .nav-menu__list li:hover {
     border-bottom: 3px solid white; }
     .nav-menu__list li.active a, .nav-menu__list li:hover a {
@@ -185,7 +187,8 @@ header {
   opacity: 0.9;
   font-family: "acumin-pro-wide", sans-serif;
   color: white;
-  text-decoration: none; }
+  text-decoration: none;
+  transition: all 0.2s; }
   @media screen and (max-width: 767px) {
     .header-downloads__card {
       font-size: 13px; } }
@@ -632,7 +635,8 @@ footer {
   margin-right: 15px;
   margin-left: 15px; }
   .footer-link img {
-    opacity: 0.8; }
+    opacity: 0.8;
+    transition: all 0.2s; }
 
 .footer-link:hover img {
   opacity: 1; }
