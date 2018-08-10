@@ -230,7 +230,9 @@ header {
   align-content: center;
   justify-content: space-between;
   margin-right: 40px;
-  color: white; }
+  color: white;
+  opacity: 0.8;
+  transition: all 0.2s; }
   @media screen and (max-width: 700px) {
     .header-link {
       margin-right: 15px;
@@ -244,7 +246,8 @@ header {
 
 .header-link:hover {
   text-decoration: none;
-  color: white; }
+  color: white;
+  opacity: 1; }
 
 .header-link:last-child {
   margin-right: 0px; }
