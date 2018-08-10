@@ -17,7 +17,7 @@ $(document).ready(function () {
   });
   
   $('body').on('click', '.nav-menu__list li', () => {
-    $('.nav-menu').fadeToggle()
+    if ($(window).width() < 768) $('.nav-menu').fadeToggle()
   });
   
 });
