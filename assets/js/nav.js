@@ -22,7 +22,7 @@ $(document).ready(function () {
   
 });
 
-$(document).on( 'scroll', function(){
+$(document).on('scroll', function(){
   let scrollPos = $(document).scrollTop();
 
   if (scrollPos >= anchorArray[1] && scrollPos < anchorArray[2]) {
@@ -35,5 +35,13 @@ $(document).on( 'scroll', function(){
     changeActiveMenuItem(0)  
   }
 
+});
+
+$(window).on('resize', function(){
+  if ($(window).width() >= 768) {
+    $('.nav-menu').show()  
+  } else {
+    $('.nav-menu').hide()   
+  }
 });
 
